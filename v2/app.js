@@ -2,9 +2,11 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var morgan = require("morgan");
-var mongoose = require("mongoose");
 
+var mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.Promise = global.Promise;
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('dev'));
 
@@ -23,9 +25,9 @@ var campgroundSchema = mongoose.Schema({
 var Campground = mongoose.model("Campground", campgroundSchema);
 
 // Campground.create({
-//         name: "Quercia",
-//         image: "https://farm2.staticflickr.com/1266/973330600_c1360f7cd3.jpg",
-//         description: "fantastico accura aggiabbaluffigiabbali"
+//         name: "Rock Tree",
+//         image: "http://www.gonews.it/wp-content/uploads/2014/02/campeggio1.jpg",
+//         description: "Harry is not my friend"
 //     },
 //     function (err, campground) {
 //     if (err) {
