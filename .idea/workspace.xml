@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e23f537-2951-47ec-a148-ccf90b561ac0" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../NodeBook/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RESTfulBlogApp/views/edit.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RESTfulBlogApp/views/new.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RESTfulBlogApp/views/show.ejs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/.eslintrc.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../MeanCourse/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/app/routes/users.server.routes.js" afterPath="$PROJECT_DIR$/../MeanCourse/app/routes/users.server.routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/app/views/signin.ejs" afterPath="$PROJECT_DIR$/../MeanCourse/app/views/signin.ejs" />
@@ -14,13 +12,175 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/config/passport.js" afterPath="$PROJECT_DIR$/../MeanCourse/config/passport.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/package-lock.json" afterPath="$PROJECT_DIR$/../MeanCourse/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/package.json" afterPath="$PROJECT_DIR$/../MeanCourse/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTfulBlogApp/app.js" afterPath="$PROJECT_DIR$/RESTfulBlogApp/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTfulBlogApp/package-lock.json" afterPath="$PROJECT_DIR$/RESTfulBlogApp/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTfulBlogApp/package.json" afterPath="$PROJECT_DIR$/RESTfulBlogApp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTfulBlogApp/public/stylesheets/app.css" afterPath="$PROJECT_DIR$/RESTfulBlogApp/public/stylesheets/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTfulBlogApp/views/index.ejs" afterPath="$PROJECT_DIR$/RESTfulBlogApp/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESTfulBlogApp/views/partials/header.ejs" afterPath="$PROJECT_DIR$/RESTfulBlogApp/views/partials/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/.eslintignore" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/.eslintignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/.github/ISSUE_TEMPLATE.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/.github/ISSUE_TEMPLATE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/.github/PULL_REQUEST_TEMPLATE.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/.github/PULL_REQUEST_TEMPLATE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/.npmignore" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/.travis.yml" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/History.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/History.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/README.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/README.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/aggregate/aggregate.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/aggregate/aggregate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/aggregate/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/aggregate/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/aggregate/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/aggregate/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/doc-methods.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/doc-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/README.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/README.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/app.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/modelA.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/modelA.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/routes.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/express/connection-sharing/routes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/geoJSONSchema.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/geoJSONSchema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/geoJSONexample.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/geoJSONexample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/geospatial.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/geospatial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/geospatial/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/globalschemas/gs_example.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/globalschemas/gs_example.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/globalschemas/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/globalschemas/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/lean/lean.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/lean/lean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/lean/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/lean/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/lean/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/lean/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/mapreduce/mapreduce.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/mapreduce/mapreduce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/mapreduce/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/mapreduce/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/mapreduce/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/mapreduce/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-across-three-collections.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-across-three-collections.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-basic.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-basic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-of-existing-doc.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-of-existing-doc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-options.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-plain-objects.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/population/population-plain-objects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/promises/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/promises/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/promises/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/promises/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/promises/promise.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/promises/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/querybuilder/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/querybuilder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/querybuilder/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/querybuilder/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/querybuilder/querybuilder.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/querybuilder/querybuilder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/replicasets/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/replicasets/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/replicasets/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/replicasets/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/replicasets/replica-sets.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/replicasets/replica-sets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/schema/schema.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/schema/schema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/schema/storing-schemas-as-json/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/schema/storing-schemas-as-json/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/schema/storing-schemas-as-json/schema.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/schema/storing-schemas-as-json/schema.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/statics/person.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/statics/person.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/statics/statics.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/examples/statics/statics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/aggregate.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/aggregate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/browser.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/browserDocument.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/browserDocument.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/cast.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/cast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/collection.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/collection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/connection.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/connectionstate.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/connectionstate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/cursor/AggregationCursor.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/cursor/AggregationCursor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/cursor/QueryCursor.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/cursor/QueryCursor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/document.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/document_provider.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/document_provider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/document_provider.web.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/document_provider.web.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/SPEC.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/SPEC.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/ReadPreference.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/ReadPreference.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/binary.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/binary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/decimal128.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/decimal128.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/objectid.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/browser/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/index.web.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/index.web.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/ReadPreference.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/ReadPreference.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/binary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/decimal128.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/decimal128.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/drivers/node-mongodb-native/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/browserMissingSchema.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/browserMissingSchema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/cast.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/cast.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/disconnected.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/disconnected.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/divergentArray.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/divergentArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/messages.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/messages.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/missingSchema.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/missingSchema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/notFound.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/notFound.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/objectExpected.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/objectExpected.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/objectParameter.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/objectParameter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/overwriteModel.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/overwriteModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/strict.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/strict.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/validation.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/validation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/validator.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/validator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/version.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/error/version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/internal.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/internal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/model.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/options.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/options.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/idGetter.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/idGetter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/removeSubdocs.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/removeSubdocs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/saveSubdocs.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/saveSubdocs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/sharding.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/sharding.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/validateBeforeSave.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/plugins/validateBeforeSave.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/promise_provider.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/promise_provider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/query.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/queryhelpers.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/queryhelpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/array.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/boolean.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/boolean.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/buffer.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/buffer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/date.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/decimal128.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/decimal128.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/documentarray.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/documentarray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/embedded.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/embedded.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/mixed.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/mixed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/number.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/number.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/objectid.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/bitwise.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/bitwise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/exists.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/exists.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/geospatial.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/geospatial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/helpers.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/helpers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/type.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/operators/type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/string.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schema/string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schematype.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/schematype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/common.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/cursor/eachAsync.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/cursor/eachAsync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/document/cleanModifiedSubpaths.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/document/cleanModifiedSubpaths.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/document/compile.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/document/compile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/applyHooks.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/applyHooks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/applyMethods.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/applyMethods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/applyStatics.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/applyStatics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/discriminator.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/model/discriminator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/projection/isDefiningProjection.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/projection/isDefiningProjection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/projection/isInclusive.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/projection/isInclusive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/projection/isPathSelectedInclusive.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/projection/isPathSelectedInclusive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/query/castUpdate.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/query/castUpdate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/query/hasDollarKeys.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/query/hasDollarKeys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/query/selectPopulatedFields.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/query/selectPopulatedFields.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/setDefaultsOnInsert.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/setDefaultsOnInsert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/updateValidators.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/services/updateValidators.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/statemachine.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/statemachine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/array.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/buffer.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/buffer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/decimal128.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/decimal128.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/documentarray.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/documentarray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/embedded.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/embedded.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/index.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/objectid.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/objectid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/subdocument.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/types/subdocument.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/utils.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/virtualtype.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/lib/virtualtype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/migrating_to_5.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/migrating_to_5.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/package.json" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/release-items.md" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/release-items.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/static.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/static.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/tools/auth.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/tools/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/tools/repl.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/tools/repl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/tools/sharded.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/tools/sharded.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/node_modules/mongoose/website.js" afterPath="$PROJECT_DIR$/v1/node_modules/mongoose/website.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/package-lock.json" afterPath="$PROJECT_DIR$/v1/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v1/package.json" afterPath="$PROJECT_DIR$/v1/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/app.js" afterPath="$PROJECT_DIR$/v2/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/package-lock.json" afterPath="$PROJECT_DIR$/v2/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/package.json" afterPath="$PROJECT_DIR$/v2/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v2/views/show.ejs" afterPath="$PROJECT_DIR$/v2/views/show.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,41 +196,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
+            <state relative-caret-position="17">
               <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/public/stylesheets/app.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/views/partials/header.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="63" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -154,6 +284,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,48 +293,15 @@
               <item name="YelpCamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="YelpCamp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="YelpCamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YelpCamp" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTfulBlogApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YelpCamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YelpCamp" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTfulBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YelpCamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YelpCamp" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTfulBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YelpCamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YelpCamp" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTfulBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YelpCamp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YelpCamp" type="462c0819:PsiDirectoryNode" />
-              <item name="RESTfulBlogApp" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="partials" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="liveEdit" />
@@ -369,7 +468,8 @@
       <workItem from="1515106110101" duration="55000" />
       <workItem from="1515246939396" duration="14048000" />
       <workItem from="1515401718308" duration="2959000" />
-      <workItem from="1515404700187" duration="10118000" />
+      <workItem from="1515404700187" duration="10843000" />
+      <workItem from="1515420236016" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="YelpCamp v1">
       <created>1515072721478</created>
@@ -396,17 +496,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45449000" />
+    <option name="totallyTimeSpent" value="46184000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="23" y="23" width="1260" height="944" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25723472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25723472" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3990981" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35138386" sideWeight="0.5345659" order="2" side_tool="true" content_ui="tabs" x="0" y="346" width="1280" height="292" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35138386" sideWeight="0.5345659" order="2" side_tool="true" content_ui="tabs" x="0" y="346" width="1280" height="292" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35138386" sideWeight="0.46543407" order="7" side_tool="false" content_ui="tabs" x="0" y="346" width="1280" height="292" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -720,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -728,7 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -736,15 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,7 +847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -768,14 +854,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="63" lean-forward="true" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="270">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="37" column="39" lean-forward="false" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
           <folding />
         </state>
       </provider>
