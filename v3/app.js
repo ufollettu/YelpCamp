@@ -17,6 +17,7 @@ app.use(morgan('dev'));
 
 // // // add static files like stylesheet
 // // app.use(express.static("public"));
+app.set('views', './v3/views');
 app.set("view engine", "ejs");
 
 // Campground.create({

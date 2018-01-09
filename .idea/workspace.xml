@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e23f537-2951-47ec-a148-ccf90b561ac0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/models/campground.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/seeds.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/views/index.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/views/landing.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/views/new.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/views/partials/footer.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/views/partials/header.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/v3/views/show.ejs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Association/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../Association/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Association/embeds.js" afterPath="$PROJECT_DIR$/../Association/embeds.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../MeanCourse/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/app/routes/users.server.routes.js" afterPath="$PROJECT_DIR$/../MeanCourse/app/routes/users.server.routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/app/views/signin.ejs" afterPath="$PROJECT_DIR$/../MeanCourse/app/views/signin.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/app/views/signup.ejs" afterPath="$PROJECT_DIR$/../MeanCourse/app/views/signup.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/config/env/development.js" afterPath="$PROJECT_DIR$/../MeanCourse/config/env/development.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/config/passport.js" afterPath="$PROJECT_DIR$/../MeanCourse/config/passport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/package-lock.json" afterPath="$PROJECT_DIR$/../MeanCourse/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MeanCourse/package.json" afterPath="$PROJECT_DIR$/../MeanCourse/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/v3/app.js" afterPath="$PROJECT_DIR$/v3/app.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,21 +20,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v3/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="60" column="38" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="38" />
+            <state relative-caret-position="187">
+              <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="seeds.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="seeds.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v3/seeds.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+            <state relative-caret-position="408">
+              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -65,16 +45,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v3/views/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -111,8 +81,8 @@
         <option value="$PROJECT_DIR$/RESTfulBlogApp/views/edit.ejs" />
         <option value="$PROJECT_DIR$/RESTfulBlogApp/views/index.ejs" />
         <option value="$PROJECT_DIR$/v3/models/campground.js" />
-        <option value="$PROJECT_DIR$/v3/app.js" />
         <option value="$PROJECT_DIR$/v3/seeds.js" />
+        <option value="$PROJECT_DIR$/v3/app.js" />
       </list>
     </option>
   </component>
@@ -205,7 +175,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/v3/app.js" />
     <property name="nodejs_interpreter_path" value="D:/Program Files/nodejs/node" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="liveEdit" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -372,7 +342,7 @@
       <workItem from="1515404700187" duration="10843000" />
       <workItem from="1515420236016" duration="10000" />
       <workItem from="1515420403732" duration="75000" />
-      <workItem from="1515500630346" duration="2730000" />
+      <workItem from="1515500630346" duration="3764000" />
     </task>
     <task id="LOCAL-00001" summary="YelpCamp v1">
       <created>1515072721478</created>
@@ -399,7 +369,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48989000" />
+    <option name="totallyTimeSpent" value="50023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -655,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v2/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="103" column="0" lean-forward="true" selection-start-line="103" selection-start-column="0" selection-end-line="105" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/views/partials/footer.ejs" />
     <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/package.json" />
     <entry file="file://$PROJECT_DIR$/RESTfulBlogApp/public/stylesheets/app.css" />
@@ -695,10 +658,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/v3/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/v3/views/new.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v2/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -711,26 +690,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v3/views/index.ejs">
+    <entry file="file://$PROJECT_DIR$/v3/seeds.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/v3/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" column="38" lean-forward="false" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v3/seeds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="29" column="57" lean-forward="false" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
+        <state relative-caret-position="187">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
           <folding />
         </state>
       </provider>
