@@ -6,6 +6,11 @@
             <div class="...">
                 <img src="<%= campground.image %>" class="media-object">
                 <p><%= campground.description %></p>
+                <% campground.comments.forEach(function(comment) {%>
+                <p><strong><%= comment.text %></strong> - <%= comment.author %></p>
+                <% })%>
+                <!--<p><%= campground.comments[0].text %></p>-->
+                <!--<p><%= campground.comments[0].author %></p>-->
                 <a href="/campgrounds">Go Back</a>
             </div>
         </div>
