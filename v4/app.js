@@ -85,24 +85,40 @@ app.get('/campgrounds/:id/comments/new',function(req,res) {
 
 //Create
 app.post("/campgrounds/:id/comments", function (req, res) {
-    Campground.findById(req.params.id, function (err, campground) {
-        if (err) {
-            console.log(err);
-            res.redirect("/campgrounds");
-        } else {
-            Comment.create(req.body.comment, function (err, comment) {
-                if (err) {
-                    console.log(err);
-                } else {
-                    campground.comments.push(comment);
-                    campground.save();
-                    res.redirect("/campgrounds/" + campground._id);
-                    // console.log(req.body.comment);
-                    // console.log(campground);
-                }
+
+    Campground.findById(req.params.id, function(err, campground) {
+        if (err) throw err;
+        // campground.comments.push({text: req.body.comment.text, author: req.body.comment.author});
+        Comment.create(req.body.comment, function (err, comment) {
+            if (err) throw err;
+            campground.comments.push(comment);
+            campground.save(function(err, result){
+                if(err) throw err;
+                res.redirect("/campgrounds/" + campground._id);
             });
-        }
+        })
+
     });
+    //
+    // Campground.findById(req.params.id, function (err, campground) {
+    //     if (err) {
+    //         console.log(err);
+    //         res.redirect("/campgrounds");
+    //     } else {
+    //         Comment.create(req.body.comment, function (err, comment) {
+    //             if (err) {
+    //                 console.log(err);
+    //             } else {
+    //                 campground.comments.push(comment);
+    //                 campground.save();
+    //                 res.redirect("/campgrounds/" + campground._id);
+    //                 // res.render("campgrounds/show", {campground:campground});
+    //                 // console.log(req.body.comment);
+    //                 // console.log(campground.comments);
+    //             }
+    //         });
+    //     }
+    // });
 });
 
 
