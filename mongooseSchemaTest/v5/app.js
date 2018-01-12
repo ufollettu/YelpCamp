@@ -7,12 +7,15 @@ var express = require("express"),
     Comment = require("./models/comment"),
     seedDB = require("./seeds");
 
-mongoose.connect("mongodb://localhost/mongooseSchemaTest");
+mongoose.connect("mongodb://localhost/yelp_camp");
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('dev'));
 app.set("view engine", "ejs");
+
+// add static files like stylesheet
+app.use(express.static(__dirname + "/public"));
 
 // seeding database
 seedDB();
@@ -83,15 +86,16 @@ app.get('/campgrounds/:id/comments/new',function(req,res) {
 
 //Create
 app.post("/campgrounds/:id/comments", function (req, res) {
-    // find the correct campground
-    Campground.findById(req.params.id, function (err, campground) {
+    Comment.create(req.body.comment, function (err, comment) {
         if (err) {
             console.log(err);
-            res.redirect("/campgrounds");
         } else {
-            Comment.create(req.body.comment, function (err, comment) {
+            Campground.findOne({"_id": req.params.id})
+            .populate("comments")
+            .exec(function (err, campground) {
                 if (err) {
                     console.log(err);
+                    res.redirect("/campgrounds");
                 } else {
                     campground.comments.push(comment);
                     campground.save();
@@ -103,6 +107,56 @@ app.post("/campgrounds/:id/comments", function (req, res) {
         }
     });
 });
+
+//     var comment = new Comment(req.body.comment);
+//     console.log(comment);
+//     Campground.collection.findAndModify(
+//         { _id: req.params.id },
+//         [],
+//         {"$push": {"comments": comment}},
+//         { new: true},
+//         function (err, campground) {
+//             console.log(campground);
+//
+//             if (err) {
+//                 console.log(err);
+//                 res.redirect("/campgrounds");
+//             } else {
+//                 console.log(campground);
+//                 res.redirect("/campgrounds/" + campground._id);
+//             }
+//         }
+//     );
+// });
+
+    // find the correct campground
+    // Campground.findById(req.params.id, function (err, campground) {
+    //     if (err) {
+    //         console.log(err);
+    //         res.redirect("/campgrounds");
+    //     } else {
+    //
+    //         campground.comments.push(comment);
+    //         campground.save();
+    //         res.redirect("/campgrounds/" + campground._id);
+            // console.log(req.body.comment);
+            // console.log(campground.comments);
+
+
+            // Comment.create(req.body.comment, function (err, comment) {
+            //     if (err) {
+            //         console.log(err);
+            //     } else {
+            //         campground.comments.push(comment);
+            //         campground.save();
+            //         res.redirect("/campgrounds/" + campground._id);
+            //         // console.log(req.body.comment);
+            //         // console.log(campground.comments);
+            //     }
+            // });
+        // }
+    // });
+// });
 
 
 

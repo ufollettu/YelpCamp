@@ -1,5 +1,7 @@
-var mongoose = require("mongoose"),
-    Campground = require("./models/campground"),
+var mongoose = require("mongoose");
+mongoose.Promise = global.Promise;
+
+var Campground = require("./models/campground"),
     Comment = require("./models/comment"),
     data = [
         {
@@ -35,18 +37,19 @@ function seedDB() {
                         console.log('added camp');
                         // console.log(data);
                         //create a comment
-                        // Comment.create({
-                        //     text: "questo è un commento",
-                        //     author: "Primo Drudi"
-                        // }, function (err, comment) {
-                        //     if (err) {
-                        //         console.log(err);
-                        //     } else {
-                        //         campground.comments.push(comment);
-                        //         campground.save();
-                        //         console.log("created new comment");
-                        //     }
-                        // });
+                        Comment.create({
+                            text: "questo è un commento",
+                            author: "Primo Drudi"
+                        }, function (err, comment) {
+                            if (err) {
+                                console.log(err);
+                            } else {
+                                campground.comments.push(comment);
+                                campground.save();
+                                console.log("created new comment");
+                                // console.log(comment);
+                            }
+                        });
                     }
                 });
             });
