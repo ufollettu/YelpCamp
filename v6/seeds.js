@@ -1,7 +1,5 @@
-var mongoose = require("mongoose");
-mongoose.Promise = global.Promise;
-
-var Campground = require("./models/campground"),
+var mongoose = require("mongoose"),
+    Campground = require("./models/campground"),
     Comment = require("./models/comment"),
     data = [
         {
@@ -47,7 +45,6 @@ function seedDB() {
                                 campground.comments.push(comment);
                                 campground.save();
                                 console.log("created new comment");
-                                // console.log(comment);
                             }
                         });
                     }

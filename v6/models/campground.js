@@ -1,6 +1,6 @@
-// Reference
-
 var mongoose = require("mongoose");
+
+// var Comment = require("./comment");
 
 var campgroundSchema = new mongoose.Schema({
     name: String,
@@ -12,12 +12,6 @@ var campgroundSchema = new mongoose.Schema({
     }]
 });
 
-module.exports = mongoose.model("Campground", campgroundSchema);
-
-//Embed
-
-// var mongoose = require("mongoose");
-//
 // var comment = new mongoose.Schema({
 //     text: String,
 //     author: String
@@ -29,5 +23,5 @@ module.exports = mongoose.model("Campground", campgroundSchema);
 //     description: String,
 //     comments: [comment]
 // });
-//
-// module.exports = mongoose.model("Campground", campgroundSchema);
+
+module.exports = mongoose.model("Campground", campgroundSchema);

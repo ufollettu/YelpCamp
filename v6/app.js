@@ -84,81 +84,50 @@ app.get('/campgrounds/:id/comments/new',function(req,res) {
     });
 });
 
-//Create
+//Create--> with referenced Schema
 app.post("/campgrounds/:id/comments", function (req, res) {
     Comment.create(req.body.comment, function (err, comment) {
         if (err) {
             console.log(err);
         } else {
             Campground.findOne({"_id": req.params.id})
-            .populate("comments")
-            .exec(function (err, campground) {
-                if (err) {
-                    console.log(err);
-                    res.redirect("/campgrounds");
-                } else {
-                    campground.comments.push(comment);
-                    campground.save();
-                    res.redirect("/campgrounds/" + campground._id);
-                    // console.log(req.body.comment);
-                    // console.log(campground.comments);
-                }
-            });
+                .populate("comments")
+                .exec(function (err, campground) {
+                    if (err) {
+                        console.log(err);
+                        res.redirect("/campgrounds");
+                    } else {
+                        campground.comments.push(comment);
+                        campground.save();
+                        res.redirect("/campgrounds/" + campground._id);
+                    }
+                });
         }
     });
 });
 
-//     var comment = new Comment(req.body.comment);
-//     console.log(comment);
-//     Campground.collection.findAndModify(
-//         { _id: req.params.id },
-//         [],
-//         {"$push": {"comments": comment}},
-//         { new: true},
-//         function (err, campground) {
-//             console.log(campground);
-//
-//             if (err) {
-//                 console.log(err);
-//                 res.redirect("/campgrounds");
-//             } else {
-//                 console.log(campground);
-//                 res.redirect("/campgrounds/" + campground._id);
-//             }
+// //Create--> with embedded Schema
+// app.post("/campgrounds/:id/comments", function (req, res) {
+//     // find the correct campground
+//     Campground.findById(req.params.id, function (err, campground) {
+//         if (err) {
+//             console.log(err);
+//             res.redirect("/campgrounds");
+//         } else {
+//             Comment.create(req.body.comment, function (err, comment) {
+//                 if (err) {
+//                     console.log(err);
+//                 } else {
+//                     campground.comments.push(comment);
+//                     campground.save();
+//                     res.redirect("/campgrounds/" + campground._id);
+//                     // console.log(req.body.comment);
+//                     // console.log(campground.comments);
+//                 }
+//             });
 //         }
-//     );
+//     });
 // });
-
-    // find the correct campground
-    // Campground.findById(req.params.id, function (err, campground) {
-    //     if (err) {
-    //         console.log(err);
-    //         res.redirect("/campgrounds");
-    //     } else {
-    //
-    //         campground.comments.push(comment);
-    //         campground.save();
-    //         res.redirect("/campgrounds/" + campground._id);
-            // console.log(req.body.comment);
-            // console.log(campground.comments);
-
-
-            // Comment.create(req.body.comment, function (err, comment) {
-            //     if (err) {
-            //         console.log(err);
-            //     } else {
-            //         campground.comments.push(comment);
-            //         campground.save();
-            //         res.redirect("/campgrounds/" + campground._id);
-            //         // console.log(req.body.comment);
-            //         // console.log(campground.comments);
-            //     }
-            // });
-        // }
-    // });
-// });
-
-
 
 //handle URL errors --> always at the end of the routes
 app.get("*", function (req, res) {
