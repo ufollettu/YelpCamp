@@ -3,8 +3,12 @@ var express = require("express"),
     bodyParser = require("body-parser"),
     morgan = require("morgan"),
     mongoose = require("mongoose"),
+    passport = require("passport"),
+    LocalStrategy = require("passport-local"),
+    // LocalStrategyMongoose = require("passport-local-mongoose"),
     Campground = require("./models/campground"),
     Comment = require("./models/comment"),
+    User = require("./models/user"),
     seedDB = require("./seeds");
 
 mongoose.connect("mongodb://localhost/yelp_camp");
@@ -19,6 +23,19 @@ app.use(express.static(__dirname + "/public"));
 
 // seeding database
 seedDB();
+
+// Passport Configuration
+app.use(require("express-session"),({
+    secret: "non so cosa sia",
+    resave: false,
+    saveUninitialized: false
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+passport.serialize(User.serializeUser());
+passport.deserialize(User.deserializeUser());
 
 //Routes
 //Landing page
@@ -128,6 +145,20 @@ app.post("/campgrounds/:id/comments", function (req, res) {
 //         }
 //     });
 // });
+
+
+//===========
+//Auth Routes
+//===========
+app.get("/register", function (req, res) {
+    res.render("register");
+});
+
+app.post("/register", function (req, res) {
+    res.send("sing");
+});
+
+
 
 //handle URL errors --> always at the end of the routes
 app.get("*", function (req, res) {
