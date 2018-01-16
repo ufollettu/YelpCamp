@@ -52,7 +52,7 @@ app.use(function (req, res, next) {
 
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundsRoutes);
-app.use("/campgrounds/:id/comments",commentsRoutes);
+app.use("/campgrounds/:id/comments", commentsRoutes);
 
 //handle URL errors --> always at the end of the routes
 app.get("*", function (req, res) {

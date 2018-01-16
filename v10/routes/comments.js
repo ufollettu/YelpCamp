@@ -66,8 +66,28 @@ router.post("/", isLoggedIn, function (req, res) {
 // });
 
 // Edit
+router.get("/:comment_id/edit", function (req, res) {
+    Comment.findById(req.params.comment_id, function (err, foundComment) {
+        if (err) {
+            res.redirect("back");
+        } else {
+            res.render("comments/edit", {campground_id: req.params.id, comment: foundComment});
+        }
+    })
+});
 
 // Update
+router.put("/:comment_id", function (req, res) {
+    Comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, {new: true})
+        .exec(function(err, updatedComment){
+            if (err) {
+                res.redirect("back");
+            } else {
+                console.log("this is the new comment" + updatedComment);
+                res.redirect("/campgrounds/" + req.params.id);
+            }
+        });
+});
 
 //passport middleware
 function isLoggedIn(req, res, next) {
