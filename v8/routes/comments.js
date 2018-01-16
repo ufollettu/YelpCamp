@@ -28,8 +28,13 @@ router.post("/", isLoggedIn, function (req, res) {
                         console.log(err);
                         res.redirect("/campgrounds");
                     } else {
+                        comment.author.id = req.user._id;
+                        comment.author.username = req.user.username; // to post username to author field in comments
+                        comment.save();
+                        // console.log(req.user.username);
                         campground.comments.push(comment);
                         campground.save();
+                        // console.log(comment);
                         res.redirect("/campgrounds/" + campground._id);
                     }
                 });
