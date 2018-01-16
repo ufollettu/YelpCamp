@@ -5,6 +5,7 @@ var express = require("express"),
     mongoose = require("mongoose"),
     passport = require("passport"),
     LocalStrategy = require("passport-local"),
+    methodOverride = require("method-override"),
     // Campground = require("./models/campground"),
     // Comment = require("./models/comment"),
     User = require("./models/user"),
@@ -24,7 +25,8 @@ app.set("view engine", "ejs");
 
 // add static files like stylesheet
 app.use(express.static(__dirname + "/public"));
-
+//methodOverride
+app.use(methodOverride("_method"));
 // seeding database
 // seedDB();
 

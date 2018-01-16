@@ -50,19 +50,74 @@ router.get('/:id', function (req, res) {
         if (err) {
             console.log(err);
         } else {
-            // console.log(foundCampground);
             // render the show template
             res.render('campgrounds/show', {campground:foundCampground});
         }
     });
 });
+//EDIT
+router.get("/:id/edit", checkCampgroundOwnership, function (req, res) {
+    Campground.findById(req.params.id, function (err, foundCampground) {
+        res.render("campgrounds/edit", {campground: foundCampground});
+    });
+});
+//UPDATE
+router.put("/:id", checkCampgroundOwnership, function (req, res) {
+    //find und update the correct campground
+    Campground.findByIdAndUpdate(req.params.id, req.body.campground, function (err, updatedCampground) {
+        if (err) {
+            console.log(err);
+            res.redirect("/campgrounds");
+        } else {
+            // redirect to show page
+            res.redirect("/campgrounds/" + req.params.id);
+        }
 
-//passport middleware
+    });
+});
+
+//DESTROY
+router.delete("/:id", checkCampgroundOwnership, function (req, res) {
+    Campground.findByIdAndRemove(req.params.id, function (err) {
+        if(err) {
+            res.redirect("/campgrounds");
+        } else {
+            res.redirect("/campgrounds");
+        }
+    })
+});
+
+//auth middleware
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()){
         return next();
     }
     res.redirect("/login");
+}
+
+// campground ownership middleware
+function checkCampgroundOwnership(req, res, next) {
+    //is user logged?
+    if (req.isAuthenticated()) {
+        Campground.findById(req.params.id, function (err, foundCampground) {
+            if (err) {
+                // console.log(err);
+                res.redirect("back");
+            } else {
+                //does the user own campground?
+                if (foundCampground.author.id.equals(req.user._id)) { // triple = not working because foundCampground.author.id is a mongoose Object, and req.user._id is a String. Use .equals instead
+                    console.log(foundCampground);
+                    next() // cb
+                } else {
+                    //otherwise redirect
+                    res.redirect("back");
+                }
+            }
+        });
+    } else {
+        //if not, redirect
+        res.redirect("back");
+    }
 }
 
 module.exports = router;
