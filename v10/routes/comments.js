@@ -65,6 +65,10 @@ router.post("/", isLoggedIn, function (req, res) {
 //     });
 // });
 
+// Edit
+
+// Update
+
 //passport middleware
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()){
