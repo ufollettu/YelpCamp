@@ -78,16 +78,46 @@ router.get("/:comment_id/edit", function (req, res) {
 
 // Update
 router.put("/:comment_id", function (req, res) {
-    Comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, {new: true})
-        .exec(function(err, updatedComment){
+    Comment.findByIdAndUpdate(req.params.comment_id,
+        {$set: {text: req.body.comment.text}},
+        {new: true},
+        function (err, updatedComment) {
             if (err) {
                 res.redirect("back");
+                console.log("error");
             } else {
-                console.log("this is the new comment" + updatedComment);
-                res.redirect("/campgrounds/" + req.params.id);
+                Campground.findByIdAndUpdate(req.params.id,
+                    {$set: {"comments.text": updatedComment.text}},
+                    // {new: true},
+                    function (err, foundCampground) {
+                        if (err) {
+                            res.redirect("/campgrounds/" + req.params.id);
+                            console.log("error");
+                            console.log(foundCampground);
+                        } else {
+                            res.redirect("/campgrounds/" + req.params.id);
+                            console.log("ok");
+                            console.log(foundCampground);
+                        }
+                    });
             }
         });
 });
+
+
+//
+// router.put("/:comment_id", function (req, res) {
+//     Comment.findByIdAndUpdate(req.params.comment_id,
+//         { $set: { comment: req.body.comment }},
+//         {new: true},
+//         function(err, updatedComment){
+//             if (err) {
+//                 res.redirect("back");
+//             } else {
+//                 res.redirect("/campgrounds/" + req.params.id);
+//             }
+//         });
+// });
 
 //passport middleware
 function isLoggedIn(req, res, next) {
