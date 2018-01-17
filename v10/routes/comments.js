@@ -78,46 +78,22 @@ router.get("/:comment_id/edit", function (req, res) {
 
 // Update
 router.put("/:comment_id", function (req, res) {
-    Comment.findByIdAndUpdate(req.params.comment_id,
-        {$set: {text: req.body.comment.text}},
-        {new: true},
-        function (err, updatedComment) {
+    Campground.findOneAndUpdate(
+        {"_id": req.params.id, "comments._id": req.params.comment_id },
+        {"$set": {"comments.$.text": req.body.comment.text}},
+        function (err, campground) {
             if (err) {
-                res.redirect("back");
-                console.log("error");
+                console.log(err);
+                console.log("campground: " + campground); //logs campground: undefined
+                console.log("comment id: " + req.params.comment_id); // logs comment id: 5a5f2ab0a6dccd210c0136de
+                console.log("campground id: " + req.params.id); // logs campground id: 5a5e083af62da603900ab0d4
+                res.redirect("/campgrounds");
             } else {
-                Campground.findByIdAndUpdate(req.params.id,
-                    {$set: {"comments.text": updatedComment.text}},
-                    // {new: true},
-                    function (err, foundCampground) {
-                        if (err) {
-                            res.redirect("/campgrounds/" + req.params.id);
-                            console.log("error");
-                            console.log(foundCampground);
-                        } else {
-                            res.redirect("/campgrounds/" + req.params.id);
-                            console.log("ok");
-                            console.log(foundCampground);
-                        }
-                    });
+                res.redirect("/campgrounds/" + campground._id);
             }
-        });
+        }
+    );
 });
-
-
-//
-// router.put("/:comment_id", function (req, res) {
-//     Comment.findByIdAndUpdate(req.params.comment_id,
-//         { $set: { comment: req.body.comment }},
-//         {new: true},
-//         function(err, updatedComment){
-//             if (err) {
-//                 res.redirect("back");
-//             } else {
-//                 res.redirect("/campgrounds/" + req.params.id);
-//             }
-//         });
-// });
 
 //passport middleware
 function isLoggedIn(req, res, next) {
