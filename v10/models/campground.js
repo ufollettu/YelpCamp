@@ -17,7 +17,7 @@ var campgroundSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Comment"
     }]
-});
+}, { usePushEach: true });
 
 // var comment = new mongoose.Schema({
 //     text: String,

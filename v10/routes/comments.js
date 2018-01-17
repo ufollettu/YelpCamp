@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router({mergeParams: true}); // {mergeParams: true} to pass the campground :id to the comment routes
-
+var mongoose = require("mongoose");
 var Campground = require("../models/campground"),
     Comment = require("../models/comment");
 
@@ -15,34 +15,65 @@ router.get('/new', isLoggedIn, function(req,res) {
     });
 });
 
-//Create--> with referenced Schema
-router.post("/", isLoggedIn, function (req, res) {
-    Comment.create(req.body.comment, function (err, comment) {
-        if (err) {
+//Create--> with referenced Schema  for  "mongoose": "^4.11.9",
+//
+router.post("/", isLoggedIn, function(req, res){
+    //lookup campground using ID
+    Campground.findById(req.params.id, function(err, campground){
+        if(err){
             console.log(err);
+            res.redirect("/campgrounds");
         } else {
-            Campground.findOne({"_id": req.params.id})
-                .populate("comments")
-                .exec(function (err, campground) {
-                    if (err) {
-                        console.log(err);
-                        res.redirect("/campgrounds");
-                    } else {
-                        comment.author.id = req.user._id;
-                        comment.author.username = req.user.username; // to post username to author field in comments
-                        comment.save();
-                        // console.log(req.user.username);
-                        campground.comments.push(comment);
-                        campground.save();
-                        // console.log(comment);
-                        res.redirect("/campgrounds/" + campground._id);
-                    }
-                });
+            Comment.create(req.body.comment, function(err, comment){
+                if(err){
+                    console.log(err);
+                } else {
+                    //add username and id to comment
+                    comment.author.id = req.user._id;
+                    comment.author.username = req.user.username;
+                    //save comment
+                    comment.save();
+                    campground.comments.push(comment);
+                    campground.save();
+                    console.log(comment);
+                    // req.flash('success', 'Created a comment!');
+                    res.redirect('/campgrounds/' + campground._id);
+                }
+            });
         }
     });
 });
 
+//Create--> with referenced Schema mongoose 5.0.0
+//
+// router.post("/", isLoggedIn, function (req, res) {
+//     Comment.create(req.body.comment, function (err, comment) {
+//         if (err) {
+//             console.log(err);
+//         } else {
+//             Campground.findOne({"_id": req.params.id})
+//                 .populate("comments")
+//                 .exec(function (err, campground) {
+//                     if (err) {
+//                         console.log(err);
+//                         res.redirect("/campgrounds");
+//                     } else {
+//                         comment.author.id = req.user._id;
+//                         comment.author.username = req.user.username; // to post username to author field in comments
+//                         comment.save();
+//                         // console.log(req.user.username);
+//                         campground.comments.push(comment);
+//                         campground.save();
+//                         // console.log(comment);
+//                         res.redirect("/campgrounds/" + campground._id);
+//                     }
+//                 });
+//         }
+//     });
+// });
+
 // //Create--> with embedded Schema
+//
 // router.post("/", function (req, res) {
 //     // find the correct campground
 //     Campground.findById(req.params.id, function (err, campground) {
@@ -76,23 +107,31 @@ router.get("/:comment_id/edit", function (req, res) {
     })
 });
 
-// Update
-router.put("/:comment_id", function (req, res) {
-    Campground.findOneAndUpdate(
-        {"_id": req.params.id, "comments._id": req.params.comment_id },
-        {"$set": {"comments.$.text": req.body.comment.text}},
-        function (err, campground) {
-            if (err) {
-                console.log(err);
-                console.log("campground: " + campground); //logs campground: undefined
-                console.log("comment id: " + req.params.comment_id); // logs comment id: 5a5f2ab0a6dccd210c0136de
-                console.log("campground id: " + req.params.id); // logs campground id: 5a5e083af62da603900ab0d4
-                res.redirect("/campgrounds");
-            } else {
-                res.redirect("/campgrounds/" + campground._id);
-            }
+// Update (for  mongoose 5.0.0)
+// router.put("/:comment_id", function (req, res) {
+//     Comment.findOneAndUpdate(
+//         {"_id": req.params.comment_id},
+//         {"$set": {"text": req.body.comment.text}},
+//         function (err, comment) {
+//             if (err) {
+//                 res.redirect("back");
+//             }
+//                 res.redirect("/campgrounds/" + req.params.id);
+//         }
+//     );
+// });
+
+// Update for  "mongoose": "^4.11.9",
+//
+router.put("/:comment_id", function(req, res){
+    Comment.findByIdAndUpdate(req.params.comment_id, req.body.comment, function(err, comment){
+        if(err){
+            console.log(err);
+            res.render("edit");
+        } else {
+            res.redirect("/campgrounds/" + req.params.id);
         }
-    );
+    });
 });
 
 //passport middleware
