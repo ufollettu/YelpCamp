@@ -15,5 +15,6 @@
     <orderEntry type="library" name="passport-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="passport-local-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="passport-local-mongoose-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="connect-flash-DefinitelyTyped" level="application" />
   </component>
 </module>

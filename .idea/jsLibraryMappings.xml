@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{express-DefinitelyTyped, express-session-DefinitelyTyped, mongoose-DefinitelyTyped, node-DefinitelyTyped, passport-DefinitelyTyped, passport-local-DefinitelyTyped, passport-local-mongoose-DefinitelyTyped}" />
+    <file url="file://$PROJECT_DIR$/v11" libraries="{YelpCamp/v11/node_modules}" />
+    <file url="PROJECT" libraries="{YelpCamp/v11/node_modules, connect-flash-DefinitelyTyped, express-DefinitelyTyped, express-session-DefinitelyTyped, mongoose-DefinitelyTyped, node-DefinitelyTyped, passport-DefinitelyTyped, passport-local-DefinitelyTyped, passport-local-mongoose-DefinitelyTyped}" />
     <includedPredefinedLibrary name="Node.js Core" />
     <excludedPredefinedLibrary name="YelpCamp/v1/node_modules" />
     <excludedPredefinedLibrary name="YelpCamp/v2/node_modules" />

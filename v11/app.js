@@ -3,6 +3,7 @@ var express = require("express"),
     bodyParser = require("body-parser"),
     morgan = require("morgan"),
     mongoose = require("mongoose"),
+    flash = require("connect-flash");
     passport = require("passport"),
     LocalStrategy = require("passport-local"),
     methodOverride = require("method-override"),
@@ -22,11 +23,13 @@ mongoose.Promise = global.Promise;
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(morgan('dev'));
 app.set("view engine", "ejs");
-
 // add static files like stylesheet
 app.use(express.static(__dirname + "/public"));
 //methodOverride
 app.use(methodOverride("_method"));
+//flash message display
+app.use(flash());
+
 // seeding database
 // seedDB();
 
@@ -44,9 +47,12 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// pass if user is authenticated to ALL routes
 app.use(function (req, res, next) {
+    // pass if user is authenticated to ALL routes
     res.locals.currentUser = req.user;
+    // pass flash message to all routes
+    res.locals.error = req.flash("error");
+    res.locals.success = req.flash("success");
     next();
 });
 
