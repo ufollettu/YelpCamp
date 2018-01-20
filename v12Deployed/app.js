@@ -12,12 +12,18 @@ var express = require("express"),
     User = require("./models/user"),
     seedDB = require("./seeds");
 
+var PORT = process.env.PORT || 4000;
+
 // Requiring Routes
 var commentsRoutes = require("./routes/comments"),
     campgroundsRoutes = require("./routes/campgrounds"),
     indexRoutes = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp", { useMongoClient: true });
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
+mongoose.connect(url, { useMongoClient: true });
+
+// mongoose.connect("mongodb://localhost/yelp_camp", { useMongoClient: true }); //local db
+// mongoose.connect("mongodb://ufollettu:radiohead@ds263367.mlab.com:63367/yelpdevcamp", { useMongoClient: true }); //mlab db
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -66,6 +72,10 @@ app.get("*", function (req, res) {
 });
 
 // Tell express to listen
-app.listen(4000, function() {
-    console.log('YelpCamp at 4000');
+app.listen(PORT, function() {
+    console.log("YelpCamp at " + PORT);
 });
+
+// app.listen(4000, function() {
+//     console.log('YelpCamp at 4000');
+// });
