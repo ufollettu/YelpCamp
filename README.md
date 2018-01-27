@@ -1,2 +1,2 @@
 # YelpCamp
-WebDevBootcamp - Full Stack APP
+WebDevBootcamp - Full Stack Node APP
